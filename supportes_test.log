@@ -1,0 +1,936 @@
+2024-09-12T19:56:06.133-03:00  INFO 12536 --- [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 12536 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T19:56:06.133-03:00  INFO 12536 --- [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "dev"
+2024-09-12T19:56:06.293-03:00  INFO 12536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12T19:56:06.293-03:00  INFO 12536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12T19:56:07.907-03:00  INFO 12536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T19:56:08.041-03:00  INFO 12536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 2 JPA repository interfaces.
+2024-09-12T19:56:09.920-03:00  INFO 12536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T19:56:09.950-03:00  INFO 12536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T19:56:09.950-03:00  INFO 12536 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T19:56:10.158-03:00  INFO 12536 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T19:56:10.158-03:00  INFO 12536 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3865 ms
+2024-09-12T19:56:10.230-03:00  INFO 12536 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T19:56:10.755-03:00  INFO 12536 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursosbd user=SA
+2024-09-12T19:56:10.755-03:00  INFO 12536 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T19:56:10.771-03:00  INFO 12536 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T19:56:10.919-03:00  INFO 12536 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T19:56:10.980-03:00  INFO 12536 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T19:56:11.019-03:00  INFO 12536 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T19:56:11.457-03:00  INFO 12536 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T19:56:12.941-03:00  INFO 12536 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T19:56:12.988-03:00  INFO 12536 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T19:56:13.355-03:00  WARN 12536 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T19:56:13.833-03:00  INFO 12536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T19:56:13.888-03:00  INFO 12536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T19:56:13.903-03:00  INFO 12536 --- [restartedMain] com.suporteos.SuporteosApplicationJava   : Started SuporteosApplicationJava in 8.924 seconds (process running for 26.675)
+2024-09-12T19:59:07.746-03:00  INFO 12536 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T19:59:07.746-03:00  WARN 12536 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T19:59:07.746-03:00  INFO 12536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-12T19:59:07.762-03:00  INFO 12536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-12T19:59:13.811-03:00  INFO 22100 --- [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 22100 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T19:59:13.814-03:00  INFO 22100 --- [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "dev"
+2024-09-12T19:59:13.880-03:00  INFO 22100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12T19:59:13.880-03:00  INFO 22100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12T19:59:14.404-03:00  INFO 22100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T19:59:14.469-03:00  INFO 22100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+2024-09-12T19:59:15.276-03:00  INFO 22100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T19:59:15.289-03:00  INFO 22100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T19:59:15.289-03:00  INFO 22100 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T19:59:15.368-03:00  INFO 22100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T19:59:15.368-03:00  INFO 22100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1488 ms
+2024-09-12T19:59:15.399-03:00  INFO 22100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T19:59:15.587-03:00  INFO 22100 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursosbd user=POSTGRES
+2024-09-12T19:59:15.587-03:00  INFO 22100 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T19:59:15.603-03:00  INFO 22100 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T19:59:15.760-03:00  INFO 22100 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T19:59:15.823-03:00  INFO 22100 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T19:59:15.854-03:00  INFO 22100 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T19:59:16.170-03:00  INFO 22100 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T19:59:17.335-03:00  INFO 22100 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T19:59:17.382-03:00  INFO 22100 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T19:59:17.667-03:00  WARN 22100 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T19:59:18.060-03:00  INFO 22100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T19:59:18.091-03:00  INFO 22100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T19:59:18.115-03:00  INFO 22100 --- [restartedMain] com.suporteos.SuporteosApplicationJava   : Started SuporteosApplicationJava in 4.766 seconds (process running for 8.218)
+2024-09-12T19:59:23.782-03:00  INFO 22100 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T19:59:23.782-03:00  WARN 22100 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T19:59:23.782-03:00  INFO 22100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-12T19:59:23.797-03:00  INFO 22100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-12T19:59:26.393-03:00  INFO 23476 --- [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 23476 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T19:59:26.396-03:00  INFO 23476 --- [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "dev"
+2024-09-12T19:59:26.443-03:00  INFO 23476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12T19:59:26.443-03:00  INFO 23476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12T19:59:26.975-03:00  INFO 23476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T19:59:27.042-03:00  INFO 23476 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
+2024-09-12T19:59:27.749-03:00  INFO 23476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T19:59:27.762-03:00  INFO 23476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T19:59:27.763-03:00  INFO 23476 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T19:59:27.834-03:00  INFO 23476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T19:59:27.835-03:00  INFO 23476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1391 ms
+2024-09-12T19:59:27.865-03:00  INFO 23476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T19:59:28.060-03:00  INFO 23476 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursosbd user=POSTGRES
+2024-09-12T19:59:28.062-03:00  INFO 23476 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T19:59:28.073-03:00  INFO 23476 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T19:59:28.227-03:00  INFO 23476 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T19:59:28.274-03:00  INFO 23476 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T19:59:28.308-03:00  INFO 23476 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T19:59:28.586-03:00  INFO 23476 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T19:59:29.591-03:00  INFO 23476 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T19:59:29.639-03:00  INFO 23476 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T19:59:29.967-03:00  WARN 23476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T19:59:30.285-03:00  INFO 23476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T19:59:30.351-03:00  INFO 23476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T19:59:30.364-03:00  INFO 23476 --- [restartedMain] com.suporteos.SuporteosApplicationJava   : Started SuporteosApplicationJava in 4.415 seconds (process running for 5.66)
+2024-09-12T20:02:17.940-03:00  INFO 23476 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:02:17.944-03:00  WARN 23476 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:02:17.944-03:00  INFO 23476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-12T20:02:17.944-03:00  INFO 23476 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-12T20:02:37.009-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 10220 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:02:37.025-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "dev"
+2024-09-12T20:02:37.190-03:00  INFO 10220 --- [suporteos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12T20:02:37.190-03:00  INFO 10220 --- [suporteos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12T20:02:38.393-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:02:38.503-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:02:40.400-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:02:40.433-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:02:40.439-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:02:40.653-03:00  INFO 10220 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:02:40.653-03:00  INFO 10220 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3463 ms
+2024-09-12T20:02:40.724-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T20:02:41.156-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursosbd user=POSTGRES
+2024-09-12T20:02:41.156-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T20:02:41.173-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:02:41.509-03:00  INFO 10220 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:02:41.674-03:00  INFO 10220 --- [suporteos] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T20:02:41.753-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:02:42.572-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:02:45.259-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:02:45.393-03:00  INFO 10220 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:02:46.095-03:00  WARN 10220 --- [suporteos] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T20:02:46.968-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T20:02:47.067-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T20:02:47.101-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Started SuporteosApplicationJava in 11.226 seconds (process running for 27.042)
+2024-09-12T20:05:35.265-03:00  INFO 10220 --- [suporteos] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2024-09-12T20:05:35.827-03:00  INFO 10220 --- [suporteos] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:05:35.843-03:00  WARN 10220 --- [suporteos] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:05:35.843-03:00  INFO 10220 --- [suporteos] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-12T20:05:35.843-03:00  INFO 10220 --- [suporteos] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-12T20:05:35.938-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 10220 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:05:35.938-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "dev"
+2024-09-12T20:05:36.158-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:05:36.175-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:05:36.394-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:05:36.394-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:05:36.394-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:05:36.435-03:00  INFO 10220 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:05:36.435-03:00  INFO 10220 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 487 ms
+2024-09-12T20:05:36.451-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-09-12T20:05:36.451-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:cursosbd user=POSTGRES
+2024-09-12T20:05:36.451-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-09-12T20:05:36.451-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:05:36.484-03:00  INFO 10220 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:05:36.484-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:05:36.499-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:05:36.624-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:05:36.624-03:00  INFO 10220 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:05:36.718-03:00  WARN 10220 --- [suporteos] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T20:05:36.827-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T20:05:36.843-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T20:05:36.843-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Started SuporteosApplicationJava in 0.936 seconds (process running for 196.795)
+2024-09-12T20:05:36.843-03:00  INFO 10220 --- [suporteos] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-12T20:10:34.336-03:00  INFO 10220 --- [suporteos] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-09-12T20:10:34.620-03:00  INFO 10220 --- [suporteos] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:10:34.620-03:00  WARN 10220 --- [suporteos] [Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:10:34.620-03:00  INFO 10220 --- [suporteos] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-09-12T20:10:34.620-03:00  INFO 10220 --- [suporteos] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-09-12T20:10:34.719-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 10220 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:10:34.719-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "dev"
+2024-09-12T20:10:34.915-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:10:34.936-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:10:35.158-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:10:35.160-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:10:35.160-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:10:35.195-03:00  INFO 10220 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:10:35.195-03:00  INFO 10220 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 470 ms
+2024-09-12T20:10:35.210-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-09-12T20:10:35.210-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:cursosbd user=POSTGRES
+2024-09-12T20:10:35.210-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-09-12T20:10:35.210-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:10:35.246-03:00  INFO 10220 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:10:35.246-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:10:35.261-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:10:35.344-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:10:35.349-03:00  INFO 10220 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:10:35.433-03:00  WARN 10220 --- [suporteos] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T20:10:35.536-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T20:10:35.561-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T20:10:35.561-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Started SuporteosApplicationJava in 0.878 seconds (process running for 495.51)
+2024-09-12T20:10:35.561-03:00  INFO 10220 --- [suporteos] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-12T20:10:49.374-03:00  INFO 10220 --- [suporteos] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
+2024-09-12T20:10:49.689-03:00  INFO 10220 --- [suporteos] [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:10:49.689-03:00  WARN 10220 --- [suporteos] [Thread-12] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:10:49.689-03:00  INFO 10220 --- [suporteos] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-09-12T20:10:49.689-03:00  INFO 10220 --- [suporteos] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-09-12T20:10:49.799-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 10220 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:10:49.799-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "dev"
+2024-09-12T20:10:49.997-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:10:50.013-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:10:50.143-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:10:50.143-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:10:50.143-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:10:50.182-03:00  INFO 10220 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:10:50.182-03:00  INFO 10220 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 383 ms
+2024-09-12T20:10:50.198-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-09-12T20:10:50.198-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:cursosbd user=POSTGRES
+2024-09-12T20:10:50.198-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-09-12T20:10:50.198-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:10:50.237-03:00  INFO 10220 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:10:50.237-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:10:50.253-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:10:50.331-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:10:50.331-03:00  INFO 10220 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:10:50.416-03:00  WARN 10220 --- [suporteos] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T20:10:50.505-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T20:10:50.516-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T20:10:50.529-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Started SuporteosApplicationJava in 0.777 seconds (process running for 510.471)
+2024-09-12T20:10:50.529-03:00  INFO 10220 --- [suporteos] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-12T20:14:45.624-03:00  INFO 10220 --- [suporteos] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-09-12T20:14:45.966-03:00  INFO 10220 --- [suporteos] [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:14:45.981-03:00  WARN 10220 --- [suporteos] [Thread-16] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:14:45.981-03:00  INFO 10220 --- [suporteos] [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-09-12T20:14:45.981-03:00  INFO 10220 --- [suporteos] [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2024-09-12T20:14:46.234-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 10220 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:14:46.234-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "dev"
+2024-09-12T20:14:46.534-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:14:46.549-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:14:46.768-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:14:46.768-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:14:46.768-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:14:46.815-03:00  INFO 10220 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:14:46.815-03:00  INFO 10220 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 581 ms
+2024-09-12T20:14:46.830-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-09-12T20:14:46.830-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:cursosbd user=POSTGRES
+2024-09-12T20:14:46.830-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-09-12T20:14:46.830-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:14:46.876-03:00  INFO 10220 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:14:46.876-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:14:46.900-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:14:46.987-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:14:46.987-03:00  INFO 10220 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:14:47.082-03:00  WARN 10220 --- [suporteos] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T20:14:47.192-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T20:14:47.208-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T20:14:47.208-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Started SuporteosApplicationJava in 1.056 seconds (process running for 747.16)
+2024-09-12T20:14:47.208-03:00  INFO 10220 --- [suporteos] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-12T20:33:04.705-03:00  INFO 10220 --- [suporteos] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-09-12T20:33:05.150-03:00  INFO 10220 --- [suporteos] [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:33:05.178-03:00  WARN 10220 --- [suporteos] [Thread-20] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:33:05.178-03:00  INFO 10220 --- [suporteos] [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-09-12T20:33:05.178-03:00  INFO 10220 --- [suporteos] [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2024-09-12T20:33:05.383-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 10220 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:33:05.383-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "dev"
+2024-09-12T20:33:05.693-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:33:05.725-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:33:06.142-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:33:06.153-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:33:06.153-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:33:06.191-03:00  INFO 10220 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:33:06.191-03:00  INFO 10220 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 805 ms
+2024-09-12T20:33:06.217-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-09-12T20:33:06.217-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:cursosbd user=POSTGRES
+2024-09-12T20:33:06.224-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-09-12T20:33:06.224-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:33:06.281-03:00  INFO 10220 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:33:06.281-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:33:06.297-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:33:06.393-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:33:06.402-03:00  INFO 10220 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:33:06.562-03:00  WARN 10220 --- [suporteos] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T20:33:06.819-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T20:33:06.858-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T20:33:06.866-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Started SuporteosApplicationJava in 1.562 seconds (process running for 1846.81)
+2024-09-12T20:33:06.866-03:00  INFO 10220 --- [suporteos] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-12T20:44:09.239-03:00  INFO 10220 --- [suporteos] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-09-12T20:44:09.481-03:00  INFO 10220 --- [suporteos] [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:44:09.481-03:00  WARN 10220 --- [suporteos] [Thread-24] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:44:09.481-03:00  INFO 10220 --- [suporteos] [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-09-12T20:44:09.481-03:00  INFO 10220 --- [suporteos] [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2024-09-12T20:44:09.564-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 10220 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:44:09.564-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "dev"
+2024-09-12T20:44:09.667-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:44:09.667-03:00  WARN 10220 --- [suporteos] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type com.curso.domains.GrupoProduto not present
+2024-09-12T20:44:09.682-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-12T20:44:09.715-03:00 ERROR 10220 --- [suporteos] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.TypeNotPresentException: Type com.curso.domains.GrupoProduto not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68) ~[na:na]
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138) ~[na:na]
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49) ~[na:na]
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117) ~[na:na]
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95) ~[na:na]
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211) ~[na:na]
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517) ~[spring-core-6.1.12.jar:6.1.12]
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465) ~[spring-core-6.1.12.jar:6.1.12]
+	at org.springframework.data.util.TypeDiscoverer.getSuperTypeInformation(TypeDiscoverer.java:256) ~[spring-data-commons-3.3.3.jar:3.3.3]
+	at org.springframework.data.util.ClassTypeInformation.getSuperTypeInformation(ClassTypeInformation.java:36) ~[spring-data-commons-3.3.3.jar:3.3.3]
+	at org.springframework.data.util.TypeInformation.getRequiredSuperTypeInformation(TypeInformation.java:327) ~[spring-data-commons-3.3.3.jar:3.3.3]
+	at org.springframework.data.repository.core.support.DefaultRepositoryMetadata.<init>(DefaultRepositoryMetadata.java:55) ~[spring-data-commons-3.3.3.jar:3.3.3]
+	at org.springframework.data.repository.core.support.AbstractRepositoryMetadata.getMetadata(AbstractRepositoryMetadata.java:77) ~[spring-data-commons-3.3.3.jar:3.3.3]
+	at org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.getRepositoryConfigurations(RepositoryConfigurationExtensionSupport.java:91) ~[spring-data-commons-3.3.3.jar:3.3.3]
+	at org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn(RepositoryConfigurationDelegate.java:168) ~[spring-data-commons-3.3.3.jar:3.3.3]
+	at org.springframework.data.repository.config.RepositoryBeanDefinitionRegistrarSupport.registerBeanDefinitions(RepositoryBeanDefinitionRegistrarSupport.java:94) ~[spring-data-commons-3.3.3.jar:3.3.3]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376) ~[spring-context-6.1.12.jar:6.1.12]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:429) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.suporteos.SuporteosApplicationJava.main(SuporteosApplicationJava.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
+Caused by: java.lang.ClassNotFoundException: com.curso.domains.GrupoProduto
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114) ~[na:na]
+	... 41 common frames omitted
+
+2024-09-12T20:44:21.403-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 10220 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:44:21.403-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "dev"
+2024-09-12T20:44:22.566-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:44:22.597-03:00  INFO 10220 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:44:22.906-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:44:22.906-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:44:22.906-03:00  INFO 10220 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:44:22.984-03:00  INFO 10220 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:44:22.984-03:00  INFO 10220 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1565 ms
+2024-09-12T20:44:23.007-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-09-12T20:44:23.007-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:cursosbd user=POSTGRES
+2024-09-12T20:44:23.007-03:00  INFO 10220 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-09-12T20:44:23.007-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:44:23.069-03:00  INFO 10220 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:44:23.069-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:44:23.085-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:44:23.253-03:00  INFO 10220 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:44:23.269-03:00  INFO 10220 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:44:23.465-03:00  WARN 10220 --- [suporteos] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T20:44:23.683-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T20:44:23.720-03:00  INFO 10220 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T20:44:23.728-03:00  INFO 10220 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Started SuporteosApplicationJava in 2.372 seconds (process running for 2523.67)
+2024-09-12T20:44:23.731-03:00  INFO 10220 --- [suporteos] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-09-12T20:47:24.331-03:00  INFO 10220 --- [suporteos] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:47:24.331-03:00  WARN 10220 --- [suporteos] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:47:24.331-03:00  INFO 10220 --- [suporteos] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-09-12T20:47:24.331-03:00  INFO 10220 --- [suporteos] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2024-09-12T20:47:30.555-03:00  INFO 4624 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 4624 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:47:30.555-03:00  INFO 4624 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "dev"
+2024-09-12T20:47:30.634-03:00  INFO 4624 --- [suporteos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12T20:47:30.634-03:00  INFO 4624 --- [suporteos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12T20:47:31.137-03:00  INFO 4624 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:47:31.184-03:00  INFO 4624 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:47:31.950-03:00  INFO 4624 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:47:31.950-03:00  INFO 4624 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:47:31.950-03:00  INFO 4624 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:47:32.012-03:00  INFO 4624 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:47:32.012-03:00  INFO 4624 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1378 ms
+2024-09-12T20:47:32.044-03:00  INFO 4624 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T20:47:32.215-03:00  INFO 4624 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursosbd user=POSTGRES
+2024-09-12T20:47:32.215-03:00  INFO 4624 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T20:47:32.231-03:00  INFO 4624 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:47:32.372-03:00  INFO 4624 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:47:32.435-03:00  INFO 4624 --- [suporteos] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T20:47:32.483-03:00  INFO 4624 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:47:32.796-03:00  INFO 4624 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:47:33.853-03:00  INFO 4624 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:47:33.906-03:00  INFO 4624 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:47:34.187-03:00  WARN 4624 --- [suporteos] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-12T20:47:34.500-03:00  INFO 4624 --- [suporteos] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-09-12T20:47:34.531-03:00  INFO 4624 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-12T20:47:34.547-03:00  INFO 4624 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Started SuporteosApplicationJava in 4.582 seconds (process running for 8.389)
+2024-09-12T20:48:37.439-03:00  INFO 4624 --- [suporteos] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-09-12T20:48:37.676-03:00  INFO 4624 --- [suporteos] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:48:37.676-03:00  WARN 4624 --- [suporteos] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:48:37.676-03:00  INFO 4624 --- [suporteos] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-12T20:48:37.690-03:00  INFO 4624 --- [suporteos] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-12T20:48:37.754-03:00  INFO 4624 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 4624 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:48:37.754-03:00  INFO 4624 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "test"
+2024-09-12T20:48:37.854-03:00  INFO 4624 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:48:37.869-03:00  INFO 4624 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:48:37.994-03:00  INFO 4624 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:48:37.994-03:00  INFO 4624 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:48:37.994-03:00  INFO 4624 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:48:38.026-03:00  INFO 4624 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:48:38.026-03:00  INFO 4624 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 272 ms
+2024-09-12T20:48:38.042-03:00  INFO 4624 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-09-12T20:48:38.042-03:00  INFO 4624 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:cursosbd user=SA
+2024-09-12T20:48:38.042-03:00  INFO 4624 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-09-12T20:48:38.042-03:00  INFO 4624 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:48:38.074-03:00  INFO 4624 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:48:38.074-03:00  INFO 4624 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:48:38.090-03:00  INFO 4624 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:48:38.168-03:00  INFO 4624 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:48:38.183-03:00  INFO 4624 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:48:38.341-03:00  WARN 4624 --- [suporteos] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': Invocation of init method failed
+2024-09-12T20:48:38.341-03:00  INFO 4624 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:48:38.341-03:00  WARN 4624 --- [suporteos] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:48:38.341-03:00  INFO 4624 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-09-12T20:48:38.357-03:00  INFO 4624 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-09-12T20:48:38.357-03:00  INFO 4624 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-09-12T20:48:38.357-03:00  INFO 4624 --- [suporteos] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-12T20:48:38.372-03:00 ERROR 4624 --- [suporteos] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.suporteos.SuporteosApplicationJava.main(SuporteosApplicationJava.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
+Caused by: org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:571) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:663) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:413) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.3.jar:3.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.12.jar:6.1.12]
+	at jdk.proxy5/jdk.proxy5.$Proxy138.save(Unknown Source) ~[na:na]
+	at com.curso.services.DBService.initDB(DBService.java:36) ~[classes/:na]
+	at com.curso.config.TestConfig.initDB(TestConfig.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 23 common frames omitted
+Caused by: jakarta.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.internal.ExceptionConverterImpl.convertCommitException(ExceptionConverterImpl.java:67) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:104) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.12.jar:6.1.12]
+	... 46 common frames omitted
+Caused by: jakarta.validation.ConstraintViolationException: Validation failed for classes [com.curso.domains.GrupoProduto] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='não deve ser nulo', propertyPath=descricao, rootBeanClass=class com.curso.domains.GrupoProduto, messageTemplate='{jakarta.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='não deve estar em branco', propertyPath=descricao, rootBeanClass=class com.curso.domains.GrupoProduto, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:151) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:81) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:251) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:106) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:632) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:499) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:371) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1425) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:487) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2324) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1981) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	... 47 common frames omitted
+
+2024-09-12T20:48:54.941-03:00  INFO 23928 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 23928 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:48:54.941-03:00  INFO 23928 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "test"
+2024-09-12T20:48:54.994-03:00  INFO 23928 --- [suporteos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12T20:48:54.994-03:00  INFO 23928 --- [suporteos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12T20:48:55.427-03:00  INFO 23928 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:48:55.474-03:00  INFO 23928 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:48:56.122-03:00  INFO 23928 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:48:56.131-03:00  INFO 23928 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:48:56.131-03:00  INFO 23928 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:48:56.194-03:00  INFO 23928 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:48:56.194-03:00  INFO 23928 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1198 ms
+2024-09-12T20:48:56.225-03:00  INFO 23928 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T20:48:56.398-03:00  INFO 23928 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursosbd user=SA
+2024-09-12T20:48:56.413-03:00  INFO 23928 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T20:48:56.413-03:00  INFO 23928 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:48:56.539-03:00  INFO 23928 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:48:56.602-03:00  INFO 23928 --- [suporteos] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T20:48:56.633-03:00  INFO 23928 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:48:56.898-03:00  INFO 23928 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:48:57.910-03:00  INFO 23928 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:48:57.973-03:00  INFO 23928 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:48:58.335-03:00  WARN 23928 --- [suporteos] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': Invocation of init method failed
+2024-09-12T20:48:58.351-03:00  INFO 23928 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:48:58.351-03:00  WARN 23928 --- [suporteos] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:48:58.351-03:00  INFO 23928 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-12T20:48:58.351-03:00  INFO 23928 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-12T20:48:58.351-03:00  INFO 23928 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-09-12T20:48:58.368-03:00  INFO 23928 --- [suporteos] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-12T20:48:58.382-03:00 ERROR 23928 --- [suporteos] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.suporteos.SuporteosApplicationJava.main(SuporteosApplicationJava.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
+Caused by: org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:571) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:663) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:413) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.3.jar:3.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.12.jar:6.1.12]
+	at jdk.proxy4/jdk.proxy4.$Proxy130.save(Unknown Source) ~[na:na]
+	at com.curso.services.DBService.initDB(DBService.java:36) ~[classes/:na]
+	at com.curso.config.TestConfig.initDB(TestConfig.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 23 common frames omitted
+Caused by: jakarta.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.internal.ExceptionConverterImpl.convertCommitException(ExceptionConverterImpl.java:67) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:104) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.12.jar:6.1.12]
+	... 46 common frames omitted
+Caused by: jakarta.validation.ConstraintViolationException: Validation failed for classes [com.curso.domains.GrupoProduto] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='não deve estar em branco', propertyPath=descricao, rootBeanClass=class com.curso.domains.GrupoProduto, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+	ConstraintViolationImpl{interpolatedMessage='não deve ser nulo', propertyPath=descricao, rootBeanClass=class com.curso.domains.GrupoProduto, messageTemplate='{jakarta.validation.constraints.NotNull.message}'}
+]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:151) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:81) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:251) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:106) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:632) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:499) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:371) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1425) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:487) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2324) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1981) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	... 47 common frames omitted
+
+2024-09-12T20:50:00.078-03:00  INFO 12324 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 12324 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:50:00.081-03:00  INFO 12324 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "test"
+2024-09-12T20:50:00.127-03:00  INFO 12324 --- [suporteos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12T20:50:00.127-03:00  INFO 12324 --- [suporteos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12T20:50:00.555-03:00  INFO 12324 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:50:00.602-03:00  INFO 12324 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:50:01.243-03:00  INFO 12324 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:50:01.259-03:00  INFO 12324 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:50:01.259-03:00  INFO 12324 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:50:01.338-03:00  INFO 12324 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:50:01.338-03:00  INFO 12324 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1211 ms
+2024-09-12T20:50:01.385-03:00  INFO 12324 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T20:50:01.558-03:00  INFO 12324 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursosbd user=SA
+2024-09-12T20:50:01.573-03:00  INFO 12324 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T20:50:01.573-03:00  INFO 12324 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:50:01.683-03:00  INFO 12324 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:50:01.745-03:00  INFO 12324 --- [suporteos] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T20:50:01.761-03:00  INFO 12324 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:50:02.011-03:00  INFO 12324 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:50:02.871-03:00  INFO 12324 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:50:02.918-03:00  INFO 12324 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:50:03.246-03:00  WARN 12324 --- [suporteos] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': Invocation of init method failed
+2024-09-12T20:50:03.246-03:00  INFO 12324 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:50:03.246-03:00  WARN 12324 --- [suporteos] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:50:03.246-03:00  INFO 12324 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-12T20:50:03.246-03:00  INFO 12324 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-12T20:50:03.246-03:00  INFO 12324 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-09-12T20:50:03.261-03:00  INFO 12324 --- [suporteos] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-12T20:50:03.277-03:00 ERROR 12324 --- [suporteos] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.suporteos.SuporteosApplicationJava.main(SuporteosApplicationJava.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
+Caused by: org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:571) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:663) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:413) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.3.jar:3.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.12.jar:6.1.12]
+	at jdk.proxy4/jdk.proxy4.$Proxy130.save(Unknown Source) ~[na:na]
+	at com.curso.services.DBService.initDB(DBService.java:36) ~[classes/:na]
+	at com.curso.config.TestConfig.initDB(TestConfig.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 23 common frames omitted
+Caused by: jakarta.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.internal.ExceptionConverterImpl.convertCommitException(ExceptionConverterImpl.java:67) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:104) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.12.jar:6.1.12]
+	... 46 common frames omitted
+Caused by: jakarta.validation.ConstraintViolationException: Validation failed for classes [com.curso.domains.GrupoProduto] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='não deve ser nulo', propertyPath=descricao, rootBeanClass=class com.curso.domains.GrupoProduto, messageTemplate='{jakarta.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='não deve estar em branco', propertyPath=descricao, rootBeanClass=class com.curso.domains.GrupoProduto, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:151) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:81) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:251) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:106) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:632) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:499) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:371) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1425) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:487) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2324) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1981) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	... 47 common frames omitted
+
+2024-09-12T20:52:42.633-03:00  INFO 1936 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 1936 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:52:42.634-03:00  INFO 1936 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "test"
+2024-09-12T20:52:42.734-03:00  INFO 1936 --- [suporteos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12T20:52:42.734-03:00  INFO 1936 --- [suporteos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12T20:52:43.278-03:00  INFO 1936 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:52:43.341-03:00  INFO 1936 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:52:44.077-03:00  INFO 1936 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:52:44.092-03:00  INFO 1936 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:52:44.092-03:00  INFO 1936 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:52:44.171-03:00  INFO 1936 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:52:44.171-03:00  INFO 1936 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1437 ms
+2024-09-12T20:52:44.186-03:00  INFO 1936 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T20:52:44.358-03:00  INFO 1936 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursosbd user=SA
+2024-09-12T20:52:44.358-03:00  INFO 1936 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T20:52:44.374-03:00  INFO 1936 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:52:44.517-03:00  INFO 1936 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:52:44.579-03:00  INFO 1936 --- [suporteos] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T20:52:44.659-03:00  INFO 1936 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:52:44.988-03:00  INFO 1936 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:52:46.115-03:00  INFO 1936 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:52:46.182-03:00  INFO 1936 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:52:46.570-03:00  WARN 1936 --- [suporteos] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': Invocation of init method failed
+2024-09-12T20:52:46.575-03:00  INFO 1936 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:52:46.586-03:00  WARN 1936 --- [suporteos] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:52:46.587-03:00  INFO 1936 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-12T20:52:46.587-03:00  INFO 1936 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-12T20:52:46.587-03:00  INFO 1936 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-09-12T20:52:46.606-03:00  INFO 1936 --- [suporteos] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-12T20:52:46.642-03:00 ERROR 1936 --- [suporteos] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.suporteos.SuporteosApplicationJava.main(SuporteosApplicationJava.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
+Caused by: org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:571) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:663) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:413) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.3.jar:3.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.12.jar:6.1.12]
+	at jdk.proxy4/jdk.proxy4.$Proxy130.save(Unknown Source) ~[na:na]
+	at com.curso.services.DBService.initDB(DBService.java:36) ~[classes/:na]
+	at com.curso.config.TestConfig.initDB(TestConfig.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 23 common frames omitted
+Caused by: jakarta.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.internal.ExceptionConverterImpl.convertCommitException(ExceptionConverterImpl.java:67) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:104) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.12.jar:6.1.12]
+	... 46 common frames omitted
+Caused by: jakarta.validation.ConstraintViolationException: Validation failed for classes [com.curso.domains.GrupoProduto] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='não deve estar em branco', propertyPath=descricao, rootBeanClass=class com.curso.domains.GrupoProduto, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+	ConstraintViolationImpl{interpolatedMessage='não deve ser nulo', propertyPath=descricao, rootBeanClass=class com.curso.domains.GrupoProduto, messageTemplate='{jakarta.validation.constraints.NotNull.message}'}
+]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:151) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:81) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:251) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:106) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:632) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:499) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:371) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1425) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:487) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2324) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1981) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	... 47 common frames omitted
+
+2024-09-12T20:54:38.986-03:00  INFO 15900 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : Starting SuporteosApplicationJava using Java 17.0.12 with PID 15900 (C:\Users\frede\Downloads\suporteos\target\classes started by frede in C:\Users\frede\Downloads\suporteos)
+2024-09-12T20:54:38.989-03:00  INFO 15900 --- [suporteos] [restartedMain] com.suporteos.SuporteosApplicationJava   : The following 1 profile is active: "test"
+2024-09-12T20:54:39.042-03:00  INFO 15900 --- [suporteos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-09-12T20:54:39.042-03:00  INFO 15900 --- [suporteos] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-09-12T20:54:39.454-03:00  INFO 15900 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-12T20:54:39.502-03:00  INFO 15900 --- [suporteos] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 2 JPA repository interfaces.
+2024-09-12T20:54:40.186-03:00  INFO 15900 --- [suporteos] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-12T20:54:40.196-03:00  INFO 15900 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-12T20:54:40.197-03:00  INFO 15900 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-12T20:54:40.259-03:00  INFO 15900 --- [suporteos] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-12T20:54:40.259-03:00  INFO 15900 --- [suporteos] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1217 ms
+2024-09-12T20:54:40.283-03:00  INFO 15900 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-12T20:54:40.480-03:00  INFO 15900 --- [suporteos] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:cursosbd user=SA
+2024-09-12T20:54:40.482-03:00  INFO 15900 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-12T20:54:40.492-03:00  INFO 15900 --- [suporteos] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:cursosbd'
+2024-09-12T20:54:40.620-03:00  INFO 15900 --- [suporteos] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-12T20:54:40.665-03:00  INFO 15900 --- [suporteos] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-12T20:54:40.695-03:00  INFO 15900 --- [suporteos] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-12T20:54:40.961-03:00  INFO 15900 --- [suporteos] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-12T20:54:41.925-03:00  INFO 15900 --- [suporteos] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-12T20:54:41.968-03:00  INFO 15900 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:54:42.262-03:00  WARN 15900 --- [suporteos] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': Invocation of init method failed
+2024-09-12T20:54:42.263-03:00  INFO 15900 --- [suporteos] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-12T20:54:42.270-03:00  WARN 15900 --- [suporteos] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2024-09-12T20:54:42.270-03:00  INFO 15900 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-12T20:54:42.272-03:00  INFO 15900 --- [suporteos] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-12T20:54:42.274-03:00  INFO 15900 --- [suporteos] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-09-12T20:54:42.285-03:00  INFO 15900 --- [suporteos] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-12T20:54:42.301-03:00 ERROR 15900 --- [suporteos] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'testConfig': Invocation of init method failed
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:222) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:422) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.12.jar:6.1.12]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.3.jar:3.3.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.3.jar:3.3.3]
+	at com.suporteos.SuporteosApplicationJava.main(SuporteosApplicationJava.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.3.jar:3.3.3]
+Caused by: org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:571) ~[spring-orm-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:663) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:413) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165) ~[spring-data-jpa-3.3.3.jar:3.3.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.12.jar:6.1.12]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.12.jar:6.1.12]
+	at jdk.proxy4/jdk.proxy4.$Proxy130.save(Unknown Source) ~[na:na]
+	at com.curso.services.DBService.initDB(DBService.java:36) ~[classes/:na]
+	at com.curso.config.TestConfig.initDB(TestConfig.java:18) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMethod.invoke(InitDestroyAnnotationBeanPostProcessor.java:457) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:401) ~[spring-beans-6.1.12.jar:6.1.12]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:219) ~[spring-beans-6.1.12.jar:6.1.12]
+	... 23 common frames omitted
+Caused by: jakarta.persistence.RollbackException: Error while committing the transaction
+	at org.hibernate.internal.ExceptionConverterImpl.convertCommitException(ExceptionConverterImpl.java:67) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:104) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562) ~[spring-orm-6.1.12.jar:6.1.12]
+	... 46 common frames omitted
+Caused by: jakarta.validation.ConstraintViolationException: Validation failed for classes [com.curso.domains.GrupoProduto] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='não deve ser nulo', propertyPath=descricao, rootBeanClass=class com.curso.domains.GrupoProduto, messageTemplate='{jakarta.validation.constraints.NotNull.message}'}
+	ConstraintViolationImpl{interpolatedMessage='não deve estar em branco', propertyPath=descricao, rootBeanClass=class com.curso.domains.GrupoProduto, messageTemplate='{jakarta.validation.constraints.NotBlank.message}'}
+]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:151) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:81) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityInsertAction.preInsert(EntityInsertAction.java:251) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:106) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:632) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:499) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:371) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1425) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:487) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2324) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1981) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	... 47 common frames omitted
+
